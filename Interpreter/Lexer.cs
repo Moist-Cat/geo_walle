@@ -29,6 +29,8 @@ public static class Tokens {
     public static string LPAREN = "(";
     public static string RPAREN = ")";
     public static string HIGHER = ">";
+    public static string HIGHEREQUAL = ">=";
+    public static string LOWEREQUAL = "<=";
     public static string EQUALS = "==";
     public static string LOWER = "<";
     public static string ASSIGN = "=";

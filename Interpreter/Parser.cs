@@ -212,7 +212,27 @@ public class Higher : BinaryOperation {
         return a > b;
     }
 }
-public class Lower : BinaryOperation {
+public class HigherEqual : BinaryOperation<float, bool>
+{
+
+    public HigherEqual(AST left, AST right) : base(left, right) { }
+
+    public override bool Operation(float a, float b)
+    {
+        return a >= b;
+    }
+}
+public class LowerEqual : BinaryOperation<float, bool>
+{
+
+    public LowerEqual(AST left, AST right) : base(left, right) { }
+
+    public override bool Operation(float a, float b)
+    {
+        return a <= b;
+    }
+}
+public class Lower : BinaryOperation<float, bool> {
 
     public Lower(AST left, AST right): base(left, right) {}
    
